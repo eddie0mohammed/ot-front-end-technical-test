@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technical Test
+The Open Targets Platform aggregates and integrates data from more than 20 different data sources to create evidence that builds and scores associations between diseases and drug targets (human genes).
 
-## Available Scripts
+Our association score ranges from 0 to 1 and is a harmonic sum of individual scores of 7 different data types: literature, rna_expression, genetic_association, somatic_mutation, known_drug, animal_model, and affected_pathway.
 
+A score of 0 corresponds to no evidence supporting an association. The closer the score is to 1, the stronger the association. If you would like to know more about our association score, please visit our scoring documentation page.
+
+Instructions
+We would like you to create a data table and visualisation showing the association scores for lung carcinoma and 5 drug targets.
+
+Please call our demo API - https://demo6922545.mockable.io/ - and using the response data, please complete the following steps based on our design specs found below.
+
+Create a data table with the following column headings:
+
+Symbol
+Gene ID
+Gene Name
+Overall Association Score
+Open Targets Front End Technical Test Specification - step 1
+
+When a user clicks the "+", expand the row of the table and show either a bar chart or a radar chart with the association scores for each individual data type - literature, rna_expression, genetic_association, somatic_mutation, known_drug, animal_model, and affected_pathway.
+Open Targets Front End Technical Test Specification - step 2
+
+Please note the following requirements:
+
+The data table should only have 5 rows
+The data table should show the targets with the top overall association scores
+By default, the data table should be sorted by the overall association score in decreasing order - the target with the highest overall score should be on top followed by the target with the next highest score and so on
+For the bar chart or radar chart, please feel free to use any chart or data visualisation library that you are comfortable using, includinges:
+D3
+Chart.js
+HighCharts
+CanvasJS
+Google Charts
+Recharts
+… or any other library that you are familiar with using
+To make the setup of the project easy, we have bootstrapped it with Create React App. Feel free to add any dependencies that you wish by adding them to package.json or including them as a script tag in public/index.html.
+
+Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+yarn start
+Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits. You will also see any lint errors in the console.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+yarn build
+Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `npm test`
+The build is minified and the filenames include the hashes.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Your app is ready to be deployed! See the section about deployment for more information.

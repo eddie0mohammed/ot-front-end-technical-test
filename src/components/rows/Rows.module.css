@@ -1,0 +1,19 @@
+
+.plusBtn{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.plusBtn:hover{
+    color: lightseagreen;
+}
+
+
+.graphContainer{
+    width: 100%;
+    background: pink;
+    height: 100px;
+}
+
